@@ -30,7 +30,9 @@ north_trains = []
 
 for i in range(0,len(trains)):
     if trains[i]['direction'] == 'north':
-        print("Train {} travels north.".format(trains[i]['train']))
+        north_trains.append(trains[i]['train'])
+
+print(north_trains)
 #--------------------------------------------------------------------------------------------------------------
 # Do the same thing for trains that travel east.
 #--------------------------------------------------------------------------------------------------------------
